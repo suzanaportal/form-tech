@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+        <head>
+        <meta    charset="utf8">
+        <meta name="author" content="Suzana Portal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>O cartão ideal para você!</title>
+     </head
+<body>
+    <img src="logoitau1.png" alt="Logo do Itau">
+    <nav>
+    <h1>Um cartão diferente de tudo que você já viu.</h1>
+    </nav>
+    <p>Aquele cartão que nunca te abandona e realiza todos os seus sonhos, até aqueles que você nunca soube que tinha.</p>
+    <p>Para começar, precisamos de alguns dados, preencha-os corretamente.</p>
+       <hr>
+       <div>
+    <h3>Seç ão 1, dados pessoais.<br>Observação: Todos os campos com * devem ser preenchidos.</h3>
+    <form id="formulario" name="formulario" method="post">
+            <div class="dados-pessoais">
+                <fieldset>
+                    <label for="nome-usuario">Nome completo*</label>
+                    <input type="text" required id="nome" name="nome">
+                </fieldset>
+                </div>
+<hr>
+<div class="dados-pessoais">
+            <fieldset>
+            <label for="genero">Selecione seu gênero"</label>
+                <select id="genero" name="genero" class="gênero"></select>
+                <option id="mulher">Feminino</option>
+                <option id="homem">Masculino</option>
+                <option id="outro">Outro</option>
+                </select>
+</fieldset>
+</div>
+<hr>
+<div class="dados-pessoais">
+    <fieldset>
+<label for="identidade">Rg:</label>
+<input type="number" id="identidade" class="dados-pessoais" minlength="5" maxlength=9>
+</fieldset>
+</div>
+<hr>
+<div class="dados-pessoais">
+<fieldset>
+<label for="cartao-CPF">CPF*</label>
+<input type="number" required="required" id="CPF" name="CPF" class="dados-pessoais">
+
+    <h3>Seção 2, localização:</h3>
+<p>Nos enforme onde você gostaria de receber seu cartão.</p>
+<hr>
+<div class"endereço">
+<fieldset>
+        <label for="CEP">CEP*</label>
+        <input type="text" required id="cep" name="cep">
+        </fieldset>
+</div>
+        <hr>
+    <div class="endereço">
+        <fieldset>
+        <label for="rua">Rua*</label> 
+        <input type="text" required="required" id="rua" name="rua">
+    </fieldset>
+</div>
+<hr>
+<div class="endereço">
+    <fieldset>
+        <label for="numero"Número</label>
+            <input type="number" id="number" name="número" class"endereço">>
+        </fieldset>
+</div>
+
+<script type="javascript" src="valid.js">       
+
+</body>
+</html>
