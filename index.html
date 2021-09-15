@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-        <head>
+                        <head>
         <meta    charset="utf8">
         <meta name="author" content="Suzana Portal">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="estilos/estilo.css" rel="stylesheet">
+        <link href="https://fonts.google.com/share?selection.family=Lato%7COpen%20Sans%7CRoboto%20Condensed:wght@300%7CSource%20Sans%20Pro" rel="stylesheet">
        <title>O cartão ideal para você!</title>
      </head
 <body>
-    <img src="logoitau1.png" alt="Logo do Itau">
-    <nav>
+    <img src="imagens/logoitau1.png" alt="Logo do Itau">
+    <header>
     <h1>Um cartão diferente de tudo que você já viu.</h1>
-    </nav>
-    <p>Aquele cartão que nunca te abandona e realiza todos os seus sonhos, até aqueles que você nunca soube que tinha.</p>
+    </header >
+    <p>Aquele cartão que nunca te abandona e realiza todos os seus sonhos, até aqueles que você nem sabia que tinha.</p>
     <p>Para começar, precisamos de alguns dados, preencha-os corretamente.</p>
        <hr>
-       <div>
-    <h3>Seç ão 1, dados pessoais.<br>Observação: Todos os campos com * devem ser preenchidos.</h3>
-    <form id="formulario" name="formulario" method="post">
+       <main>
+       <section>
+           <header>
+    <h3>Seção 1, dados pessoais.<br>Observação: Todos os campos com * devem ser preenchidos.</h3>
+</header>
+<form method="post" action="" onSubmit="return validar()" name="formenvia">
             <div class="dados-pessoais">
                 <fieldset>
-                    <label for="nome-usuario">Nome completo*</label>
-                    <input type="text" required id="nome" name="nome">
+                    <label for="nome">Nome completo*</label>
+                    <input type="text" required="required" id="nome" name="nome" class="dados-pessoais">
                 </fieldset>
                 </div>
 <hr>
 <div class="dados-pessoais">
             <fieldset>
             <label for="genero">Selecione seu gênero"</label>
-                <select id="genero" name="genero" class="gênero"></select>
+                <select id="genero" name="genero" class="genero">
                 <option id="mulher">Feminino</option>
                 <option id="homem">Masculino</option>
                 <option id="outro">Outro</option>
@@ -39,40 +43,195 @@
 <div class="dados-pessoais">
     <fieldset>
 <label for="identidade">Rg:</label>
-<input type="number" id="identidade" class="dados-pessoais" minlength="5" maxlength=9>
+<input type="text" id="identidade" class="dados-pessoais">
 </fieldset>
 </div>
 <hr>
 <div class="dados-pessoais">
 <fieldset>
-<label for="cartao-CPF">CPF*</label>
-<input type="number" required="required" id="CPF" name="CPF" class="dados-pessoais">
-
+<label for="CPF">CPF*</label>
+<input type="text" required="required" id="CPF" name="CPF" class="dados-pessoais" onblur="testaCpf()">
+</fieldset>
+</div>
+</section>
+<section>
+<header>
     <h3>Seção 2, localização:</h3>
+</header>
 <p>Nos enforme onde você gostaria de receber seu cartão.</p>
 <hr>
 <div class"endereço">
 <fieldset>
         <label for="CEP">CEP*</label>
-        <input type="text" required id="cep" name="cep">
+        <input type="text" required="required" id="cep" name="cep" onblur="pesquisacep()">
         </fieldset>
 </div>
         <hr>
     <div class="endereço">
         <fieldset>
         <label for="rua">Rua*</label> 
-        <input type="text" required="required" id="rua" name="rua">
+        <input type="text" required="required" id="rua" name="rua class="endereco"">
     </fieldset>
 </div>
 <hr>
 <div class="endereço">
     <fieldset>
-        <label for="numero"Número</label>
-            <input type="number" id="number" name="número" class"endereço">>
+        <label for="numero"></label>Número*</label>
+            <input type="text" id="numero" name="numero" required="required" name="numero" class"endereco">
         </fieldset>
 </div>
+<hr>
+<div class="endereço">
+    <fieldset>
+        <label for="bairro">Bairro*</label>
+        <input type="text" id="bairro" required="required" name="bairro" class="endereco">
+        </fieldset>
+</div>
+<hr>
+<div class="endereço">
+    <fieldset>
+    <label for="cidade">Cidade*</label>
+    <input type="cidade" id="cidade" name="cidade" required="required" class="endereco">
+    </fieldset>
+    </div>
+    <hr>
+    <div class="endereço">
+        <fieldset>
+        <label for="estado">Estado*</label>
+        <input type="text" id="uf" name="estado" required="required" class="endereco" maxlength=2>
+        </fieldset>
+        </div>
+        <input type="text" name="ibge" id="ibge" class="endereco">
+</section>
+        <hr>
+        <section>
+            <header>
+        <h3>Seção 3, Dados para contato.<br>Preencha corretamente para que possamos te  contactar facilmente.</h3>
+        </header>
+        <hr>
+<div class="contato">
+<fieldset>
+<label for="telefone">Informe seu número de telefone pessoal com DDD*</label>
+<input type="tel" id="telefone" name="telefone" required="required" class="contato">
+</fieldset>
+</div>
+<hr>
+<div class="contato">
+    <fieldset>
+    <label for="whatSapp">Esse contato também é WhatSapp?</label>
+<select id="telefone" name="telefone" class="contato">
+     <option id="sim">Sim</option>
+    <option ig="não">Não</option>
+    </fieldset>
+</select>
+</div>
+<hr>
+<div class="contato">
+<fieldset>
+<label for="telrecado">Informe um telefone para recado com DDD</label>
+<input type="tel" id="telefone" class="contato" minlength=10 maxlength=11>
+</fieldset>
+</div>
+<hr>
+<div class="contato">
+<fieldset>
+<label for="email">Email*</label>
+<input type="text" id="email" name="email" required class="contato" onblur="validmail()" maxlength="56">
+</fieldset>
+</div>
+</section>
+<hr>
+<section>
+    <header>
+<h3>Seção 4<br>Agora, responda algumas perguntas para sabermos qual o melhor cartão para você.</h3>
+</header>
+<hr>
+<div class="perguntas">
+<fieldset>
+<p>1. Se você pudesse, o que gostaria de fazer?</p>
+<hr>
+<select id="perguntas" name"perguntas" class="perguntas">
+<option id="viajar">Viajar</option>
+<option id="fazer um curso">Fazer um curso</option>
+<option id="fazer uma reforma">Fazer uma reforma</option>
+<option id="comprar um produto">Comprar um produto</option>
+<option id="compras">Compras</option>
+<option id="assinaturas">Assinaturas</option>
+<option id="Passeios">Realizar passeios</option>
+<option id="gastronomia">Gastronomia</option>
+<option id="pagamentos">Pagamentos</option>
+<option id="outros">Outros</option>
+</fieldset>
+</select>
+</div>
+<hr>
+<p>2. Qual o seu nível de uso?</p>
+<hr>
+<div class="perguntas">
+<fieldset>
+<select id="perguntas" name="perguntas" class="perguntas">
+<hr>
+<option id="baixo">Gasto muito pouco</option>
+<option id="controlado">Gasto só com emergências ou quando muito necessário</option>
+<option id="médio">Faço uso rotineiro</option>
+<option id="alto">Uso sempre e com quase tudo</option>
+</fieldset>
+</select>
+</div>
+<hr>
+<p>3. Qual sua renda mensal?</p>
+<hr>
+<div class="perguntas">
+<fieldset>
+<select id="perguntas" name="perguntas">
+<option id="renda">De R$1000,00 a R$2000,00</option>
+<option id="renda">De R$2001,00 a R$3000,00</option>
+<option id="renda">De R$3001,00 a R$4000,00</option>
+<option id="renda">De R$4001,00 a R$5000,00</option>
+<option id="renda">De R$5001,00 a R$6000,00</option>
+<option id="renda">De R$6001,00 a R$7000,00</option>
+<option id="renda">De R$7001,00 a R$8000,00</option>
+<option id="renda">De R$8001, a R$9000,00</option>
+<option id="renda">De R$9001,00 a R$10000,00</option>
+<option id="renda">Acima de R$10000,00</option>
+</fieldset>
+</select>
+</div>
+<hr>
+<p> 4 O que mais te atrae em um cartão de crédito?</p>
+<hr>
+<div class="perguntas">
+<fieldset>
+<select id="perguntas" name="perguntas">
+<option id="atracao">Programa de pontuação</option>
+<option id="atracao">Acúmulo de milhas</option>
+<option id="atracao">Limite</option>
+<option id="atracao">Facilidade de utilização</option>
+<option id="atracao">Vantagens e benefícios</option>
+<option id="atracao">Descontos</option>
+<option id="atracao">Parcerias</option>
+<option id="atracao">Tarifas</option>
+<option id="atracao">Outros</option>
+</fieldset>
+</select>
+</div>
+</section>
 
-<script type="javascript" src="valid.js">       
+<!-- Um botão com um método em JavaScript "onclick", que significa para clicar uma função -->
+<input name="enviar" type="submit" onblur="validar();"  onclick="validar();">
+<!-- Um botão de limpar todo o formulário com um método que clica uma função -->
+<input name="limpar" type="reset" value="limpar">
 
+<footer>
+    <p>Criado e desenvolvido por Suzana Portal</p>
+    <h3>Quem sou</h3>
+    <p>Suzana Abreu Portal, 28 anos, sempre em busca de novos conhecimentos.<br>Iniciante em programação, com foco em aprender. muito mais.</p>
+    <h3>Meus contatos</h3>
+    <a href="https://www.linkedin.com/in/suzana-abreu-portal-pcd-b26347145">LinkedIn</a>
+    <a href="https://github.com/suzanaportal">Meu Github</a>
+    <p>Meu e-mail:<br>suzana.a.portal@gmail.com</p>
+</footer>
+</main>
 </body>
+<script type="text/javaScript"  src="js/valid.js"></script>
 </html>
