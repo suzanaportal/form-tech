@@ -4,7 +4,14 @@ function validar() {
     document.getElementById('nome').focus();
     return;
   }
+  
+  else if (document.getElementById('cpf').value == "" || !testaCPF(document.getElementById('cpf').value)) {
+    alert("Digite seu cpf corretamente");
+    document.getElementById('cpf').focus();
+    return;
+  }
 
+  
   else if (document.getElementById('email').value == "" || document.getElementById('email').value.indexOf("@") == -1 || document.getElementById('email').value.indexOf(".") == -1) {
     alert("Digite seu e-mail corretamente");
     document.getElementById('email').focus();
@@ -14,12 +21,6 @@ function validar() {
   else if (document.getElementById('cel').value.length != 11) {
     alert("Digite seu celular corretamente");
     document.getElementById('cel').focus();
-    return;
-  }
-
-  else if (document.getElementById('cpf').value == "" || !testaCPF(document.getElementById('cpf').value)) {
-    alert("Digite seu cpf corretamente");
-    document.getElementById('cpf').focus();
     return;
   }
 
