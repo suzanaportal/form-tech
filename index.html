@@ -21,7 +21,7 @@
            <header>
     <h3>Seção 1, dados pessoais.<br>Observação: Todos os campos com * devem ser preenchidos.</h3>
 </header>
-<form method="post" action="" onSubmit="return validar()" name="formenvia">
+<form method="post" action="""></form>
             <div class="dados-pessoais">
                 <fieldset>
                     <label for="nome">Nome completo*</label>
@@ -50,7 +50,7 @@
 <div class="dados-pessoais">
 <fieldset>
 <label for="CPF">CPF*</label>
-<input type="text" required="required" id="CPF" name="CPF" class="dados-pessoais" onblur="testaCpf()">
+<input type="text" required="required" id="cpf" name="cpf" class="dados-pessoais">
 </fieldset>
 </div>
 </section>
@@ -63,7 +63,7 @@
 <div class"endereço">
 <fieldset>
         <label for="CEP">CEP*</label>
-        <input type="text" required="required" id="cep" name="cep" onblur="pesquisacep()">
+        <input type="text" required="required" id="cep" name="cep" onblur="pesquisacep(this.value)">
         </fieldset>
 </div>
         <hr>
@@ -101,7 +101,12 @@
         <input type="text" id="uf" name="estado" required="required" class="endereco" maxlength=2>
         </fieldset>
         </div>
+        <div class="endereco">
+        <fieldset>
+            <label for="IBGE">IBGE</label>
         <input type="text" name="ibge" id="ibge" class="endereco">
+        </fieldset>
+    </div>
 </section>
         <hr>
         <section>
@@ -111,8 +116,8 @@
         <hr>
 <div class="contato">
 <fieldset>
-<label for="telefone">Informe seu número de telefone pessoal com DDD*</label>
-<input type="tel" id="telefone" name="telefone" required="required" class="contato">
+<label for="telefone">Informe seu número de celular com DDD*</label>
+<input type="tel" id="cel" name="celular" required="required" class="contato">
 </fieldset>
 </div>
 <hr>
@@ -218,7 +223,7 @@
 </section>
 
 <!-- Um botão com um método em JavaScript "onclick", que significa para clicar uma função -->
-<input name="enviar" type="submit" onblur="validar();"  onclick="validar();">
+<input name="enviar" type="submit" onclick="validar();">
 <!-- Um botão de limpar todo o formulário com um método que clica uma função -->
 <input name="limpar" type="reset" value="limpar">
 
@@ -231,7 +236,9 @@
     <a href="https://github.com/suzanaportal">Meu Github</a>
     <p>Meu e-mail:<br>suzana.a.portal@gmail.com</p>
 </footer>
+</form>
 </main>
+<script src="js/valid.js"></script>
+<script src="js/validaDados.js"></script>
 </body>
-<script type="text/javaScript"  src="js/valid.js"></script>
 </html>
