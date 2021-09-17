@@ -9,7 +9,7 @@
        <title>O cartão ideal para você!</title>
      </head
 <body>
-    <img src="imagens/itaucard.png" alt="Logo do Itau Card: Arte com fundo azul. Dois quadrados com pontas arredondadas. No centro da imagem, o quadrado maior, levemente na diagonal é de cor laranja e sobre ele, em destaque, o quadrado menor, na cor azul, um pouco mais escura que o fundo, escrito em sua base: "Itaú", em amarelo. Abaixo dos quadrados, sobre o fundo azul: "Itaucard", escrito em branco.">
+    <img src="imagens/itaucard.png" alt="Logo do Itau Card: Fundo azul. Dois quadrados com pontas arredondadas. No centro da imagem, o quadrado maior é laranja, e sobre ele um quadrado menor na cor azul mais escuro que o fundo, escrito em sua base: Itaú em amarelo. Abaixo dos quadrados, sobre o fundo azul: Itaucard escrito em branco.">
     <header>
     <h1>Um cartão diferente de tudo que você já viu.</h1>
     </header >
@@ -116,7 +116,7 @@
         <hr>
 <div class="contato">
 <fieldset>
-<label for="telefone">Informe seu número de celular com DDD*</label>
+<label for="celular">Informe seu número de celular com DDD*</label>
 <input type="tel" id="cel" name="celular" required="required" class="contato">
 </fieldset>
 </div>
@@ -133,7 +133,7 @@
 <hr>
 <div class="contato">
 <fieldset>
-<label for="telrecado">Informe um telefone para recado com DDD</label>
+<label for="telefone">Informe um telefone  com DDD</label>
 <input type="tel" id="telefone" class="contato" minlength=10 maxlength=11>
 </fieldset>
 </div>
@@ -141,7 +141,7 @@
 <div class="contato">
 <fieldset>
 <label for="email">Email*</label>
-<input type="text" id="email" name="email" required class="contato" onblur="validmail()" maxlength="56">
+<input type="text" id="email" name="email" required="required" class="contato" onblur="validmail()" maxlength="56">
 </fieldset>
 </div>
 </section>
@@ -155,7 +155,7 @@
 <fieldset>
 <p>1. Se você pudesse, o que gostaria de fazer?</p>
 <hr>
-<select id="perguntas" name"perguntas" class="perguntas">
+<select id="perguntas1" name"perguntas" class="perguntas">
 <option id="viajar">Viajar</option>
 <option id="fazer um curso">Fazer um curso</option>
 <option id="fazer uma reforma">Fazer uma reforma</option>
@@ -174,7 +174,7 @@
 <hr>
 <div class="perguntas">
 <fieldset>
-<select id="perguntas" name="perguntas" class="perguntas">
+<select id="perguntas2" name="perguntas" class="perguntas">
 <hr>
 <option id="baixo">Gasto muito pouco</option>
 <option id="controlado">Gasto só com emergências ou quando muito necessário</option>
@@ -188,17 +188,17 @@
 <hr>
 <div class="perguntas">
 <fieldset>
-<select id="perguntas" name="perguntas">
-<option id="renda">De R$1000,00 a R$2000,00</option>
-<option id="renda">De R$2001,00 a R$3000,00</option>
-<option id="renda">De R$3001,00 a R$4000,00</option>
-<option id="renda">De R$4001,00 a R$5000,00</option>
-<option id="renda">De R$5001,00 a R$6000,00</option>
-<option id="renda">De R$6001,00 a R$7000,00</option>
-<option id="renda">De R$7001,00 a R$8000,00</option>
-<option id="renda">De R$8001, a R$9000,00</option>
-<option id="renda">De R$9001,00 a R$10000,00</option>
-<option id="renda">Acima de R$10000,00</option>
+<select id="perguntas3" name="perguntas">
+<option id="renda1">De R$1000,00 a R$2000,00</option>
+<option id="renda2">De R$2001,00 a R$3000,00</option>
+<option id="renda3">De R$3001,00 a R$4000,00</option>
+<option id="renda4">De R$4001,00 a R$5000,00</option>
+<option id="renda5">De R$5001,00 a R$6000,00</option>
+<option id="renda6">De R$6001,00 a R$7000,00</option>
+<option id="renda7">De R$7001,00 a R$8000,00</option>
+<option id="renda8">De R$8001, a R$9000,00</option>
+<option id="renda9">De R$9001,00 a R$10000,00</option>
+<option id="renda10">Acima de R$10000,00</option>
 </fieldset>
 </select>
 </div>
@@ -207,16 +207,16 @@
 <hr>
 <div class="perguntas">
 <fieldset>
-<select id="perguntas" name="perguntas">
-<option id="atracao">Programa de pontuação</option>
-<option id="atracao">Acúmulo de milhas</option>
-<option id="atracao">Limite</option>
-<option id="atracao">Facilidade de utilização</option>
-<option id="atracao">Vantagens e benefícios</option>
-<option id="atracao">Descontos</option>
-<option id="atracao">Parcerias</option>
-<option id="atracao">Tarifas</option>
-<option id="atracao">Outros</option>
+<select id="perguntas4" name="perguntas">
+<option id="atracao1">Programa de pontuação</option>
+<option id="atracao2">Acúmulo de milhas</option>
+<option id="atracao3">Limite</option>
+<option id="atracao4">Facilidade de utilização</option>
+<option id="atracao5">Vantagens e benefícios</option>
+<option id="atracao6">Descontos</option>
+<option id="atracao7">Parcerias</option>
+<option id="atracao8">Tarifas</option>
+<option id="atracao9">Outros</option>
 </fieldset>
 </select>
 </div>
@@ -228,10 +228,11 @@
 <input name="limpar" type="reset" value="limpar">
 
 <footer>
-    <p>Criado e desenvolvido por Suzana Portal</p>
-    <h3>Quem sou</h3>
-    <p>Suzana Abreu Portal, 28 anos, sempre em busca de novos conhecimentos.<br>Iniciante em programação, com foco em aprender. muito mais.</p>
-    <h3>Meus contatos</h3>
+    <p>Criação e desenvolvimento por: Suzana Portal</p>
+    <h3>Quem Sou Eu?</h3>
+<img src="imagens/suzana.jpg" alt="Foto vertical, tirada de dia, Suzana está de pé, voltada para a direita. Sua pele é branca, seus cabelos são castanhos e lisos até a cintura. Seu rosto arredondado está virado para nós. Suas sobrancelhas são escuras. Tem o nariz arredondado. Ela sorri largamente. Usa uma blusa de fio, de mangas longas, com largas listras diagonais, nas cores bordô e branco. Em seu braço direito, estendido ao longo do corpo, as listras são verticais. Usa calça preta e bota preta com detalhes brancos. Ao fundo, uma parede branca e uma janela veneziana, também branca, aberta do lado direito, onde está apoiado o braço esquerdo de Suzana. Lá fora, mais ao fundo um gramado com muitas árvores.">"
+<p>Apaixonada por tecnologia, família e literatura.<br>Sempre em busca de novos conhecimentos.<br>Gosto de desafios e procuro me dedicar a completar cada um da melhor forma possível.<br>Amo pessoas e estar com elas,.<br>Objetivo: Me desenvolver no que gosto e me tornar uma profissional na área.</p>
+    <h3>Fale Comigo</h3>
     <a href="https://www.linkedin.com/in/suzana-abreu-portal-pcd-b26347145">LinkedIn</a>
     <a href="https://github.com/suzanaportal">Meu Github</a>
     <p>Meu e-mail:<br>suzana.a.portal@gmail.com</p>
