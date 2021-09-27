@@ -6,7 +6,6 @@
         <meta name="author" content="Suzana Portal">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="estilos/estilo.css" rel="stylesheet">
-        <link href="https://fonts.google.com/share?selection.family=Lato%7COpen%20Sans%7CRoboto%20Condensed:wght@300%7CSource%20Sans%20Pro" rel="stylesheet">
        <title>O cartão ideal para você!</title>
      </head
 <body>
@@ -23,7 +22,7 @@
            <header>
     <h3>Seção 1, dados pessoais.<br>Observação: Todos os campos com * devem ser preenchidos.</h3>
 </header>
-<form method="post" action="""></form>
+<form method="post" action="">
             <div class="dados-pessoais">
                 <fieldset>
                     <label for="nome">Nome completo*</label>
@@ -33,7 +32,7 @@
 <hr>
 <div class="dados-pessoais">
             <fieldset>
-            <label for="genero">Selecione seu gênero"</label>
+            <label for="genero">Selecione seu gênero</label>
                 <select id="genero" name="genero" class="genero">
                 <option id="mulher">Feminino</option>
                 <option id="homem">Masculino</option>
@@ -42,6 +41,13 @@
 </fieldset>
 </div>
 <hr>
+<div class="dados-pessoais">
+    <fieldset>
+    <label for="date">Data de nascimento</label>
+    <input type="date" id="data" name="data">
+    </fildset>
+    </div>
+    <hr>
 <div class="dados-pessoais">
     <fieldset>
 <label for="identidade">Rg:</label>
@@ -83,6 +89,13 @@
         </fieldset>
 </div>
 <hr>
+<div class="endereço">
+    <fieldset"
+    <label for="complemento">Complemento</label>
+    <input type="text" id="complemento" name="complemento">
+    </fieldset>
+    </div>
+    <hr>
 <div class="endereço">
     <fieldset>
         <label for="bairro">Bairro*</label>
@@ -128,7 +141,7 @@
     <label for="whatSapp">Esse contato também é WhatSapp?</label>
 <select id="telefone" name="telefone" class="contato">
      <option id="sim">Sim</option>
-    <option ig="não">Não</option>
+    <option id="não">Não</option>
     </fieldset>
 </select>
 </div>
@@ -228,24 +241,24 @@
 <input name="enviar" type="submit" onclick="validar();">
 <!-- Um botão de limpar todo o formulário com um método que clica uma função -->
 <input name="limpar" type="reset" value="limpar">
-</form>
 <!--Aqui, rodapé contendo informações sobre a autora da página-->
 <footer>
     <p>Criação e desenvolvimento por: Suzana Portal</p>
     <h3>Quem Sou Eu?</h3>
-<img src="imagens/suzana.jpg" alt="Foto vertical, tirada de dia, Suzana está de pé, voltada para a direita. Sua pele é branca, seus cabelos são castanhos e lisos até a cintura. Seu rosto arredondado está virado para nós. Suas sobrancelhas são escuras. Tem o nariz arredondado. Ela sorri largamente. Usa uma blusa de fio, de mangas longas, com largas listras diagonais, nas cores bordô e branco. Em seu braço direito, estendido ao longo do corpo, as listras são verticais. Usa calça preta e bota preta com detalhes brancos. Ao fundo, uma parede e uma janela veneziana, ambas brancas.">
+<img src="imagens/suzana.jpeg" alt="Foto vertical, tirada de dia, Suzana está de pé, voltada para a direita. Sua pele é branca, seus cabelos são castanhos e lisos até a cintura. Seu rosto arredondado está virado para nós. Suas sobrancelhas são escuras. Tem o nariz arredondado. Ela sorri largamente. Usa uma blusa de fio, de mangas longas, com largas listras diagonais, nas cores bordô e branco. Em seu braço direito, estendido ao longo do corpo, as listras são verticais. Usa calça preta e bota preta com detalhes brancos. Ao fundo, uma parede e uma janela veneziana, ambas brancas.">
 <p>Apaixonada por tecnologia, família e literatura.<br>Sempre em busca de novos conhecimentos.<br>Gosto de desafios e procuro me dedicar a completar cada um da melhor forma possível.<br>Amo pessoas e estar com elas,.<br>Objetivo: Me desenvolver no que gosto e me tornar uma profissional na área.</p>
     <h3>Fale Comigo</h3>
     <nav>
         <ul>
-    <li><a href="https://www.linkedin.com/in/suzana-abreu-portal-pcd-b26347145">LinkedIn</a></li>
-    <li><a href="https://github.com/suzanaportal">Meu Github</a></li>
-    <li><a href="suzana.a.portal@gmail.com">E-mail</a></li>
+    <li><a href="https://www.linkedin.com/in/suzana-abreu-portal-pcd-b26347145" target="_blank" img src="imagens/linkedin.png">LinkedIn</a></li>
+    <li><a href="https://github.com/suzanaportal" target="_blank">Github</a></li>
+    <li><a href="suzana.a.portal@gmail.com" target="_blank">E-mail</a></li>
         </ul>
     </nav>
 </footer>
 </main>
 <script src="js/valid.js"></script>
 <script src="js/validaDados.js"></script>
+</form>
 </body>
 </html>
